@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bootstrap": "^5.3.2",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "next": "latest",
+    "npm": "^10.2.3",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "react-star-ratings": "^2.3.0",
+    "sass": "^1.69.5",
+    "sharp": "^0.32.6",
+    "slick-carousel": "^1.8.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.5",
+    "@types/node": "20.8.9",
+    "@types/react": "18.2.33",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "4.2.0",
+    "prettier": "^2.8.0",
+    "typescript": "5.2.2"
+  }
+}

@@ -1,2 +1,1 @@
-# next-js-typescript-http-service
-Next Js project using typescript and http service for API call
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

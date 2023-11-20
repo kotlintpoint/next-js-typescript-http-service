@@ -1,0 +1,25 @@
+.navbar{
+  background-color: black;
+  .logo{
+    text-decoration: none;
+    letter-spacing: -0.05px;
+    color: #fff !important;
+    font-size: 26px;
+    //line-height: 60px;
+    font-weight: 900;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Text",sans-serif;
+  }
+  .nav{
+    padding: 10px 12px;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 14px;
+    a{
+      color: white !important;
+    }
+  }
+}

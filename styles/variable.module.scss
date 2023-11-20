@@ -1,0 +1,56 @@
+$lightFontColor: #919294;
+$fontColor: #3c4043;
+$lightFontColor: #858795;
+$secondary-color: #1a62f5;
+$FontSFProText: "SF Pro Text", sans-serif;
+$FontPoppins: "Poppins", sans-serif;
+$border-radius: 5px;
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$borderColor: #dbdde5;
+$lightBackground: #f3f4f8;
+$transition_2: 0.25s ease-in;
+$colorYellow: #ffd500;
+$colorGreen: #26a051;
+$errorColor: #FF0000;
+$parafont: #868E96;
+$lightFont: #62646A;
+
+@mixin xs-screen {
+  @media (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin lg-large {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin small-desktop {
+  @media (max-width: 1139px) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: 1140px) {
+    @content;
+  }
+}

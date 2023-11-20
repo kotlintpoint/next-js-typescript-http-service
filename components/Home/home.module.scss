@@ -1,0 +1,174 @@
+@import "../../styles/variable.module";
+
+.layoutContainer{
+  padding: 4rem 0 2rem 0;
+}
+.banner{
+  width: 100%;
+  align-items: center;
+  background-color: #05060a;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  h1{
+    color: #eaeaea;
+    span{
+      color: yellow;
+    }
+  }
+  .postCampaign {
+    background-color: yellow;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+  }
+  .searchContainer{
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    .searchInput{
+      border: unset;
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .searchButton{
+      display: flex;
+      align-items: center;
+      background-color: #dcdada;
+      color: gray;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+  }
+}
+
+.container{
+  .fullPortfolio{
+    //display: flex;
+    .portfolioCard{
+      margin-bottom: 8px;
+      .title{
+        width: 100% !important;
+        padding: 4px;
+      }
+      .image{
+        @include mobile-only {
+          height: 200px !important;
+        }
+      }
+    }
+
+  }
+  .portfolioCard{
+    //margin: 1rem;
+    border-width: 0;
+    width: 100% !important;
+    border-radius: 0.5rem;
+    display: flex !important;
+    align-items: center;
+    .image{
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      @include mobile-only {
+        height: 150px;
+      }
+    }
+    .title{
+      width: 12rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 4px 0;
+      @include mobile-only {
+        width: 8rem;
+      }
+    }
+  }
+  .platformContainer{
+    display: flex;
+    width: 100%;
+    @include mobile-only {
+      overflow: scroll;
+    }
+    .image{
+      margin: 1rem;
+      border-radius: 2rem;
+    }
+  }
+  .servicesCard{
+    border-width: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    align-items: center;
+    .titleRating{
+      padding-left: 1rem;
+      width: 100%;
+      .title{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 14px;
+        .reviewDate{
+          font-weight: 500;
+          flex:none;
+          color: gray;
+          font-size: 12px;
+          padding-top: 4px
+        }
+      }
+      .ratings{
+        display: flex;
+        align-items: flex-end;
+        span{
+          padding-left: 4px;
+          color: gray;
+          font-size: 12px;
+        }
+      }
+    }
+    .minPrice{
+      position: absolute;
+      right: 1rem;
+      color: gray;
+      font-size: 12px;
+      span{
+        font-weight: 700;
+      }
+    }
+    .button{
+      position: absolute;
+      right: 1rem;
+      background-color: #f0f0f0;
+      color: gray;
+    }
+  }
+  .agencyDetails{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    .title{
+      color: gray;
+    }
+    .detail {
+      color: black;
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+    }
+  }
+}
+.arrow{
+  border: solid gray;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

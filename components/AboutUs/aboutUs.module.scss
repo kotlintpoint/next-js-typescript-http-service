@@ -1,0 +1,12 @@
+@import "../../styles/variable.module.scss";
+
+.container{
+  h2{
+    font-size: 16px;
+    font-weight: 600
+  }
+  p{
+    padding-left: 2rem;
+    text-align: justify;
+  }
+}

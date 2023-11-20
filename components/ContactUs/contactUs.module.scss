@@ -1,0 +1,112 @@
+@import "../../styles/variable.module.scss";
+
+.container{
+  box-shadow: 0 4px 12px 0 rgba(64,85,196,.14);
+  margin-top: 4rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile-only {
+    flex-direction: column;
+  }
+  .form{
+    width: 50%;
+    @include mobile-only{
+      width: 100%;
+    }
+    .formControl{
+      margin-bottom: 2rem;
+      font-size: 14px;
+      background-color: unset;
+      border-width: 0 0 2px 0;
+    }
+    .sendButton{
+      border-radius: 2rem;
+      font-size: 16px;
+      padding: 4px 20px;
+    }
+  }
+  .heading{
+    padding-bottom: 4rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contactInfo{
+    width: 30%;
+    //padding-left: 4rem;
+    @include mobile-only{
+      width: 100%;
+      padding-top: 2rem;
+    }
+    @include mobile-only {
+      margin-top: 30px;
+    }
+    ul {
+      margin-bottom: 40px;
+      padding-left: unset;
+      li {
+        margin-bottom: 22px;
+        padding: 0 0 0 45px;
+        position: relative;
+        @include mobile-only {
+          margin-bottom: 18px;
+          padding-left: 35px;
+        }
+        &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 0;
+          top: 4px;
+          background-image: url("/contact-us-social.svg");
+          background-repeat: no-repeat;
+          display: inline-block;
+          background-size: 30px;
+          background-position: 0 0;
+        }
+        &.phone {
+          &:before {
+            background-position: 0 -108px;
+          }
+        }
+        &.support {
+          &:before {
+            background-position: 0 -84px;
+          }
+        }
+        &.fb {
+          &:before {
+            background-position: 0 -25px;
+          }
+        }
+        &.whatsapp {
+          &:before {
+            background-position: 0 -132px;
+          }
+        }
+        &.instagram {
+          &:before {
+            background-position: -5px -54px;
+          }
+        }
+      }
+      button {
+        background: transparent;
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        color: $fontColor;
+        outline: none;
+      }
+    }
+
+    .buttonChat{
+      border-radius: 2rem;
+      font-size: 16px;
+
+    }
+  }
+}

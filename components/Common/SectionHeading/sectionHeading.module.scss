@@ -1,0 +1,48 @@
+.heading{
+  margin-top: 2rem;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  h1{
+    font-weight: 700;
+  }
+  .viewAllButton{
+    font-size: 12px;
+    background-color: #ffffff;
+    color: gray;
+    height: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    border-width: 0;
+  }
+}
+.arrow {
+  border: solid gray;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

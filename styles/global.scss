@@ -1,0 +1,48 @@
+@import "./variable.module.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F3F4F8;
+  font-family: sans-serif, "SF Pro Text",
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1{
+  margin-bottom: 0 !important;
+  font-size: 20px;
+  font-family: "SF Pro Text",sans-serif;
+}
+li {
+  list-style: none;
+}
+.slick-prev:before, .slick-next:before{
+  content: unset !important;
+}
+.slick-slide{
+  padding: 4px;
+}

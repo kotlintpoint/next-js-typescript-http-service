@@ -1,0 +1,19 @@
+@import "../../styles/variable.module.scss";
+
+.container{
+  h2{
+    font-size: 16px;
+    font-weight: 600
+  }
+  p{
+    font-size: 14px;
+    padding-left: 2rem;
+    text-align: justify;
+    a{
+      color: cornflowerblue;
+    }
+    span{
+      font-weight: 600;
+    }
+  }
+}

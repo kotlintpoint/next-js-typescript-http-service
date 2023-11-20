@@ -1,0 +1,74 @@
+@import "../../styles/variable.module";
+
+.container{
+  //padding-top: 4rem;
+  .heading{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .viewAllButton{
+      height: fit-content;
+      align-self: center;
+      border-width: 0;
+      font-size: 12px;
+    }
+  }
+}
+.agentDetailsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  .imageContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .favouriteIcon{
+      margin-right: 1rem;
+      cursor: pointer;
+      position: absolute;
+      right: 44px;
+    }
+    .shareIcon{
+      cursor: pointer;
+    }
+    .image{
+      border-radius: 4rem;
+    }
+  }
+
+  .fullName{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .website{
+    color: #0070f3;
+  }
+  .buttonContainer{
+    display: flex;
+    column-gap: 4px;
+    padding: 1rem;
+    width: 100%;
+    button{
+      font-weight: 500;
+      width: 100%;
+      background-color: white;
+      border-width: 0;
+    }
+    button:hover{
+      background-color: black;
+    }
+  }
+  .platformContainer{
+    display: flex;
+    width: 100%;
+    @include mobile-only {
+      overflow: scroll;
+    }
+    .image{
+      margin: 0.5rem;
+      border-radius: 2rem;
+    }
+  }
+}
